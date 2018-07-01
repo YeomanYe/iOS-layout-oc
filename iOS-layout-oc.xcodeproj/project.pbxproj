@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		708EE64C20E8D11300D228F7 /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708EE64B20E8D11300D228F7 /* DetailListViewController.m */; };
 		70F025F320E78CB90093341C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F025F220E78CB90093341C /* AppDelegate.m */; };
 		70F025F620E78CB90093341C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F025F520E78CB90093341C /* ViewController.m */; };
 		70F025F920E78CB90093341C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F025F720E78CB90093341C /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		708EE64A20E8D11300D228F7 /* DetailListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
+		708EE64B20E8D11300D228F7 /* DetailListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
 		70F025EE20E78CB90093341C /* iOS-layout-oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-layout-oc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F025F120E78CB90093341C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70F025F220E78CB90093341C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			children = (
 				70F0262F20E7B9510093341C /* ListViewController.h */,
 				70F0263020E7B9510093341C /* ListViewController.m */,
+				708EE64A20E8D11300D228F7 /* DetailListViewController.h */,
+				708EE64B20E8D11300D228F7 /* DetailListViewController.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				70F025F620E78CB90093341C /* ViewController.m in Sources */,
 				70F0262820E78EE40093341C /* BaseViewController.m in Sources */,
 				70F0263120E7B9510093341C /* ListViewController.m in Sources */,
+				708EE64C20E8D11300D228F7 /* DetailListViewController.m in Sources */,
 				70F0260120E78CBA0093341C /* main.m in Sources */,
 				70F025F320E78CB90093341C /* AppDelegate.m in Sources */,
 				70F0262B20E78F180093341C /* BaseTableViewController.m in Sources */,
