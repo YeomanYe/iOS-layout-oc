@@ -14,7 +14,11 @@
 
 @implementation DetailListViewController
 
-#pragma mark - Table view data source
+#pragma mark - TVController
+
+- (instancetype)init {
+    return [self initWithStyle:UITableViewStylePlain];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
