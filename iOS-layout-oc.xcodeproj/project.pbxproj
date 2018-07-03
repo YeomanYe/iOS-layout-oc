@@ -19,6 +19,8 @@
 		70F0262820E78EE40093341C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0262720E78EE40093341C /* BaseViewController.m */; };
 		70F0262B20E78F180093341C /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0262A20E78F180093341C /* BaseTableViewController.m */; };
 		70F0263120E7B9510093341C /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0263020E7B9510093341C /* ListViewController.m */; };
+		F67EE04232C5477274C0F5A7 /* ListLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE2220E734B54E89A6318 /* ListLayoutTest.m */; };
+		F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		70F0262C20E78FB10093341C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		70F0262F20E7B9510093341C /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		70F0263020E7B9510093341C /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		F67EE1A7534521E0D83CAE3B /* ListLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLayoutTest.h; sourceTree = "<group>"; };
+		F67EE2220E734B54E89A6318 /* ListLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLayoutTest.m; sourceTree = "<group>"; };
+		F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailLayoutTest.h; sourceTree = "<group>"; };
+		F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailLayoutTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 				70F025FF20E78CBA0093341C /* Info.plist */,
 				70F0260020E78CBA0093341C /* main.m */,
 				70F0262C20E78FB10093341C /* PrefixHeader.pch */,
+				F67EE865BB50F4D928D7578A /* Test */,
 			);
 			path = "iOS-layout-oc";
 			sourceTree = "<group>";
@@ -176,6 +183,17 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F67EE865BB50F4D928D7578A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */,
+				F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */,
+				F67EE2220E734B54E89A6318 /* ListLayoutTest.m */,
+				F67EE1A7534521E0D83CAE3B /* ListLayoutTest.h */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +333,8 @@
 				70F0260120E78CBA0093341C /* main.m in Sources */,
 				70F025F320E78CB90093341C /* AppDelegate.m in Sources */,
 				70F0262B20E78F180093341C /* BaseTableViewController.m in Sources */,
+				F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */,
+				F67EE04232C5477274C0F5A7 /* ListLayoutTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
