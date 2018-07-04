@@ -14,6 +14,12 @@
 
 @implementation ListViewController
 
+- (instancetype)initWithStyle:(UITableViewStyle)style {
+    if (self = [super initWithStyle:style]) {
+        [self initDataSource];
+    }
+    return self;
+}
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -35,6 +41,10 @@
     NSString *title = nil;
     title = _dataSource[indexPath.row];
     return [self didSelectItemWithTitle:title];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 64;
 }
 
 
