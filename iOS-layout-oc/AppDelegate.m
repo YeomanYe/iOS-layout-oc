@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ListLayoutTest.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,18 @@
 
 @implementation AppDelegate
 
+/** 设置根目录 */
+- (void)setRootView {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *vc = [[ViewController alloc] init];
+    self.window.rootViewController = vc;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [self setRootView];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

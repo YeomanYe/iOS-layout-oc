@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.navigationController pushViewController:[[ListLayoutTest alloc] init] animated:true];
 }
 
 
@@ -28,4 +27,10 @@
 }
 
 
+- (IBAction)onListTestTouch:(id)sender {
+//    [self.navigationController pushViewController:[[ListLayoutTest alloc] init] animated:false];
+    [self presentViewController:[[ListLayoutTest alloc]init] animated:true completion:^(void){
+        
+    }];
+}
 @end

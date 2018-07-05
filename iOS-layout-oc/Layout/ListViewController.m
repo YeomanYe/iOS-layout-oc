@@ -14,30 +14,38 @@
 
 @implementation ListViewController
 
-- (instancetype)initWithStyle:(UITableViewStyle)style {
-    if (self = [super initWithStyle:style]) {
-        [self initDataSource];
-    }
-    return self;
-}
-#pragma mark - Table view data source
+#pragma mark - TVController
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
     return _dataSource.count;
 }
 
+- (instancetype)initWithStyle:(UITableViewStyle)style {
+    return [self init];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+}
+
+- (instancetype)init {
+    return [super initWithStyle:UITableViewStylePlain];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifierNormal = @"cellNormal";
+    static NSString *identifierNormal = @"UITableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal forIndexPath:indexPath];
-    if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifierNormal];
+    if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifierNormal];
     cell.textLabel.text = _dataSource[indexPath.row];
     // Configure the cell...
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *title = nil;
     title = _dataSource[indexPath.row];
     return [self didSelectItemWithTitle:title];
