@@ -34,6 +34,7 @@
     // Configure the cell...
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
+    [cell layoutSubviews];
     return cell;
 }
 
