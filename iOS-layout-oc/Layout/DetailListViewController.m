@@ -8,8 +8,9 @@
 
 #import "DetailListViewController.h"
 
-@interface DetailListViewController ()
-
+@interface DetailListViewController (){
+    NSString *identifierNormal;
+}
 @end
 
 @implementation DetailListViewController
@@ -17,6 +18,7 @@
 #pragma mark - TVController
 
 - (instancetype)init {
+    identifierNormal = @"cellNormal";
     return [self initWithStyle:UITableViewStylePlain];
 }
 
@@ -25,12 +27,20 @@
     return _dataSource.count;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifierNormal];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifierNormal = @"cellNormal";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal forIndexPath:indexPath];
-    if(!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierNormal];
+    if(!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierNormal];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     cell.textLabel.text = [_dataSource allKeys][indexPath.row];
-    cell.detailTextLabel.text = [_dataSource allValues][indexPath.row];
+    cell.detailTextLabel.text = @"Detail";
     // Configure the cell...
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
@@ -42,5 +52,9 @@
     title = [_dataSource allKeys][indexPath.row];
     return [self didSelectItemWithTitle:title];
 }
+
+/*- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 64;
+}*/
 
 @end

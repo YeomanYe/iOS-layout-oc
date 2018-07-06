@@ -21,6 +21,7 @@
 		70F0263120E7B9510093341C /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0263020E7B9510093341C /* ListViewController.m */; };
 		F67EE04232C5477274C0F5A7 /* ListLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE2220E734B54E89A6318 /* ListLayoutTest.m */; };
 		F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */; };
+		F67EE9B0E96B556C805F9293 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE7A07464B81640F36644 /* BaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		70F0263020E7B9510093341C /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		F67EE1A7534521E0D83CAE3B /* ListLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLayoutTest.h; sourceTree = "<group>"; };
 		F67EE2220E734B54E89A6318 /* ListLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLayoutTest.m; sourceTree = "<group>"; };
+		F67EE7A07464B81640F36644 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		F67EE961A5BE68E5AAF5AFD2 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailLayoutTest.h; sourceTree = "<group>"; };
 		F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailLayoutTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +166,8 @@
 				70F0262720E78EE40093341C /* BaseViewController.m */,
 				70F0262920E78F180093341C /* BaseTableViewController.h */,
 				70F0262A20E78F180093341C /* BaseTableViewController.m */,
+				F67EE7A07464B81640F36644 /* BaseCell.m */,
+				F67EE961A5BE68E5AAF5AFD2 /* BaseCell.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				70F0262B20E78F180093341C /* BaseTableViewController.m in Sources */,
 				F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */,
 				F67EE04232C5477274C0F5A7 /* ListLayoutTest.m in Sources */,
+				F67EE9B0E96B556C805F9293 /* BaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

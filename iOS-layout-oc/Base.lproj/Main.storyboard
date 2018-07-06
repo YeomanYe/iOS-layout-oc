@@ -13,29 +13,66 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URk-mC-FD0">
-                                <rect key="frame" x="129" y="318" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ListLayoutTest">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fp9-S0-opv">
+                                <rect key="frame" x="31" y="485" width="51" height="31"/>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p2H-Mu-Me5">
+                                <rect key="frame" x="238" y="486" width="121" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <color key="tintColor" red="0.16706398659999999" green="0.49349372860000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUw-BH-ZuK">
+                                <rect key="frame" x="140" y="263" width="94" height="30"/>
+                                <state key="normal" title="ListTest">
                                     <color key="titleColor" red="0.16706398659999999" green="0.49349372860000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="onListTestTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WO9-eE-Tt6"/>
+                                    <action selector="onListTestTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byF-w9-QkM"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ztM-Nb-uvo">
+                                <rect key="frame" x="140" y="92" width="94" height="29"/>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0P-WV-bEd">
+                                <rect key="frame" x="153" y="318" width="69" height="30"/>
+                                <state key="normal" title="DetailTest"/>
+                                <connections>
+                                    <action selector="onDetailTestTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhH-kb-pI7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58544680760000001" green="0.98270823699999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.32204954655601647" green="0.28532168750558462" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gUw-BH-ZuK" firstAttribute="top" secondItem="ztM-Nb-uvo" secondAttribute="bottom" constant="142" id="2X7-et-Wcm"/>
+                            <constraint firstItem="fp9-S0-opv" firstAttribute="centerY" secondItem="p2H-Mu-Me5" secondAttribute="centerY" id="3aN-Ev-XKR"/>
+                            <constraint firstItem="fp9-S0-opv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="4ln-Yv-KWd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p2H-Mu-Me5" secondAttribute="trailing" constant="6" id="DUe-e6-g0V"/>
+                            <constraint firstItem="ztM-Nb-uvo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IeP-t3-3cZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fp9-S0-opv" secondAttribute="bottom" constant="151" id="KFJ-TT-lBh"/>
+                            <constraint firstItem="b0P-WV-bEd" firstAttribute="top" secondItem="gUw-BH-ZuK" secondAttribute="bottom" constant="25" id="KUA-kJ-QET"/>
+                            <constraint firstItem="gUw-BH-ZuK" firstAttribute="centerX" secondItem="ztM-Nb-uvo" secondAttribute="centerX" id="QaU-6l-oXk"/>
+                            <constraint firstItem="gUw-BH-ZuK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qdh-KB-toR"/>
+                            <constraint firstItem="b0P-WV-bEd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wm1-Hv-s60"/>
+                            <constraint firstItem="ztM-Nb-uvo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="eZD-u0-ag3"/>
+                            <constraint firstItem="gUw-BH-ZuK" firstAttribute="trailing" secondItem="ztM-Nb-uvo" secondAttribute="trailing" id="eiQ-wI-Sjc"/>
+                            <constraint firstItem="gUw-BH-ZuK" firstAttribute="leading" secondItem="ztM-Nb-uvo" secondAttribute="leading" id="f8i-In-9uu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.56409529745822606" green="1" blue="0.63961456375883885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <color key="tintColor" red="0.32204954660000001" green="0.28532168749999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

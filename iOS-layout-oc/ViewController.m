@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ListLayoutTest.h"
+#import "DetailLayoutTest.h"
 
 @interface ViewController ()
 
@@ -31,6 +32,12 @@
 //    [self.navigationController pushViewController:[[ListLayoutTest alloc] init] animated:false];
     [self presentViewController:[[ListLayoutTest alloc]init] animated:true completion:^(void){
         
+    }];
+}
+
+- (IBAction)onDetailTestTouch:(id)sender {
+    [self presentViewController:[[DetailLayoutTest alloc]init] animated:true completion:^(void){
+
     }];
 }
 @end

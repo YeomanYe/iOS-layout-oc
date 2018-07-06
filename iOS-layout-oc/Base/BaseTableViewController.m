@@ -30,6 +30,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置分割线的风格
+    /*self.tableViewCategory.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    self.tableViewCategory.separatorColor = [UIColor clearColor];
+    self.tableViewList.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    self.tableViewList.separatorColor = [UIColor clearColor];*/
 }
 
 - (void)viewDidLayoutSubviews {
