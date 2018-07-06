@@ -18,7 +18,7 @@
 #pragma mark - TVController
 
 - (instancetype)init {
-    identifierNormal = @"cellNormal";
+    identifierNormal = @"abc";
     return [self initWithStyle:UITableViewStylePlain];
 }
 
@@ -35,12 +35,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal forIndexPath:indexPath];
+    // cell = nil;
     if(!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierNormal];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     cell.textLabel.text = [_dataSource allKeys][indexPath.row];
-    cell.detailTextLabel.text = @"Detail";
+    cell.detailTextLabel.text = [_dataSource allValues][indexPath.row];
     // Configure the cell...
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
