@@ -30,17 +30,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     //去掉多余的分割线
     UITableView *tableView = self.tableView;
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = [UIColor clearColor];
     [tableView setTableFooterView:view];
     [tableView setTableHeaderView:view];
+
+    // 创建全屏滑动手势，调用系统自带滑动手势的target的action方法
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] init];
+    // 设置手势代理，拦截手势触发
+    pan.delegate = self;
+    // 给导航控制器的view添加全屏滑动手势
+    [self.view addGestureRecognizer:pan];
+    // 禁止使用系统自带的滑动手势
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+
     //设置分割线的风格
     /*self.tableViewCategory.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableViewCategory.separatorColor = [UIColor clearColor];
     self.tableViewList.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableViewList.separatorColor = [UIColor clearColor];*/
+}
+
+-(void)handleNavigationTransition{
+    [self dismissViewControllerAnimated:true completion:^{
+
+    }];
+};
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    //只有导航的根控制器不需要右滑的返回的功能。
+    [self handleNavigationTransition];
+    return YES;
 }
 
 - (void)viewDidLayoutSubviews {

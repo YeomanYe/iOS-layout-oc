@@ -7,6 +7,7 @@
 //
 
 #import "DetailListViewController.h"
+#import "BaseCell.h"
 
 @interface DetailListViewController (){
     NSString *identifierNormal;
@@ -35,7 +36,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal];
     // cell = nil;
     if(!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierNormal];
+        cell = [[BaseCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierNormal];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     cell.textLabel.text = [_dataSource allKeys][indexPath.row];
