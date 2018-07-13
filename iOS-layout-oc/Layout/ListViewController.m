@@ -8,7 +8,9 @@
 
 #import "ListViewController.h"
 
-@interface ListViewController ()
+@interface ListViewController (){
+    NSString *identifierNormal;
+}
 
 @end
 
@@ -28,7 +30,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 }
 
 - (instancetype)init {
@@ -36,8 +37,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifierNormal = @"UITableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal forIndexPath:indexPath];
+    identifierNormal = @"cellNormal";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal];
     if (!cell) cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifierNormal];
     cell.textLabel.text = _dataSource[indexPath.row];
     // Configure the cell...

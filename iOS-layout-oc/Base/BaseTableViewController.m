@@ -30,6 +30,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //去掉多余的分割线
+    UITableView *tableView = self.tableView;
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+    [tableView setTableHeaderView:view];
     //设置分割线的风格
     /*self.tableViewCategory.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableViewCategory.separatorColor = [UIColor clearColor];
@@ -57,6 +63,7 @@
 #warning Incomplete implementation, return the number of rows
     return 0;
 }
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -1,4 +1,3 @@
-//
 //  main.m
 //  iOS-layout-oc
 //

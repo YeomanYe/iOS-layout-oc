@@ -18,7 +18,7 @@
 #pragma mark - TVController
 
 - (instancetype)init {
-    identifierNormal = @"abc";
+    identifierNormal = @"cellDetail";
     return [self initWithStyle:UITableViewStylePlain];
 }
 
@@ -29,12 +29,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifierNormal];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifierNormal];
     // cell = nil;
     if(!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierNormal];
