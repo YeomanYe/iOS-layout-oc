@@ -4,8 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ListViewController.h"
+#import "ListViewCtrl.h"
 
-@interface DetailLayoutTest : ListViewController
+@interface DetailLayoutTest : ListViewCtrl
 
 @end

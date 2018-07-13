@@ -1,5 +1,5 @@
 //
-//  BaseTableViewController.h
+//  BaseTableViewCtrl.h
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/6/30.
@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseTableViewController : UITableViewController
+@interface BaseTableViewCtrl : UITableViewController
 
 @end
 
-@interface BaseTableViewController(UISubclassingHooks)
+@interface BaseTableViewCtrl(UISubclassingHooks)
 
 - (void)initDataSource;
 - (void)didSelectItemWithTitle:(NSString *)title;

@@ -1,18 +1,18 @@
 //
-//  BaseTableViewController.m
+//  BaseTableViewCtrl.m
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/6/30.
 //  Copyright © 2018年 叶铭. All rights reserved.
 //
 
-#import "BaseTableViewController.h"
+#import "BaseTableViewCtrl.h"
 
-@interface BaseTableViewController ()
+@interface BaseTableViewCtrl ()
 
 @end
 
-@implementation BaseTableViewController
+@implementation BaseTableViewCtrl
 
 -(instancetype)initWithStyle:(UITableViewStyle)style {
     if(self = [super initWithStyle:style]){

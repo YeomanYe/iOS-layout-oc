@@ -1,18 +1,18 @@
 //
-//  BaseViewController.m
+//  BaseViewCtrl.m
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/6/30.
 //  Copyright © 2018年 叶铭. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseViewCtrl.h"
 
-@interface BaseViewController ()
+@interface BaseViewCtrl ()
 
 @end
 
-@implementation BaseViewController
+@implementation BaseViewCtrl
 
 - (void)viewDidLoad {
     [super viewDidLoad];

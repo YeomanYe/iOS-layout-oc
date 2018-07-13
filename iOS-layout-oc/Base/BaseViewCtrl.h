@@ -1,5 +1,5 @@
 //
-//  BaseViewController.h
+//  BaseViewCtrl.h
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/6/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewController : UIViewController
+@interface BaseViewCtrl : UIViewController
 
 @end

@@ -1,21 +1,21 @@
 //
-//  ListViewController.m
+//  ListViewCtrl.m
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/7/1.
 //  Copyright © 2018年 叶铭. All rights reserved.
 //
 
-#import "ListViewController.h"
+#import "ListViewCtrl.h"
 #import "BaseCell.h"
 
-@interface ListViewController (){
+@interface ListViewCtrl (){
     NSString *identifierCell;
     BaseCell *cell;
 }
 @end
 
-@implementation ListViewController
+@implementation ListViewCtrl
 
 #pragma mark - TVController
 
@@ -25,8 +25,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    int sum = 0;
+    NSInteger sum = 0;
     if(_singleDataSource) sum = _singleDataSource.count;
     else if(_detailDataSource) sum = _detailDataSource.count;
     return sum;
@@ -72,6 +71,10 @@
     NSString *title = nil;
     title = [_detailDataSource allKeys][indexPath.row];
     return [self didSelectItemWithTitle:title];
+}
+
+-(void)initDataSource{
+    
 }
 
 @end
