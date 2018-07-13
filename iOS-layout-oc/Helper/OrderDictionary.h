@@ -4,7 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ListViewController.h"
 
-@interface ListLayoutTest : ListViewController
+
+@interface OrderDictionary : NSMutableDictionary
+-(NSArray *)allKeys;
+-(NSArray *)allValues;
 @end

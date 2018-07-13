@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46A00DDD20EDA3DB00FF0EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A00DDB20EDA3DB00FF0EA1 /* Main.storyboard */; };
-		708EE64C20E8D11300D228F7 /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708EE64B20E8D11300D228F7 /* DetailListViewController.m */; };
+		708EE64C20E8D11300D228F7 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708EE64B20E8D11300D228F7 /* ListViewController.m */; };
 		70F025F320E78CB90093341C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F025F220E78CB90093341C /* AppDelegate.m */; };
 		70F025F620E78CB90093341C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F025F520E78CB90093341C /* ViewController.m */; };
 		70F025FB20E78CBA0093341C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F025FA20E78CBA0093341C /* Assets.xcassets */; };
@@ -18,10 +18,10 @@
 		70F0261620E78CBA0093341C /* iOS_layout_ocUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0261520E78CBA0093341C /* iOS_layout_ocUITests.m */; };
 		70F0262820E78EE40093341C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0262720E78EE40093341C /* BaseViewController.m */; };
 		70F0262B20E78F180093341C /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0262A20E78F180093341C /* BaseTableViewController.m */; };
-		70F0263120E7B9510093341C /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0263020E7B9510093341C /* ListViewController.m */; };
-		F67EE04232C5477274C0F5A7 /* ListLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE2220E734B54E89A6318 /* ListLayoutTest.m */; };
 		F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */; };
 		F67EE9B0E96B556C805F9293 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE7A07464B81640F36644 /* BaseCell.m */; };
+		F67EEE988E375CD356F5B7BF /* ListLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EEE7CB22BDE4F2F24C045 /* ListLayoutTest.m */; };
+		F67EEF39C84653D536286E5E /* OrderDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE7BBEB31C783348C4CA0 /* OrderDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,8 @@
 
 /* Begin PBXFileReference section */
 		46A00DDC20EDA3DB00FF0EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		708EE64A20E8D11300D228F7 /* DetailListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
-		708EE64B20E8D11300D228F7 /* DetailListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
+		708EE64A20E8D11300D228F7 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		708EE64B20E8D11300D228F7 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		70F025EE20E78CB90093341C /* iOS-layout-oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-layout-oc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F025F120E78CB90093341C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70F025F220E78CB90093341C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,13 +65,13 @@
 		70F0262920E78F180093341C /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		70F0262A20E78F180093341C /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		70F0262C20E78FB10093341C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		70F0262F20E7B9510093341C /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		70F0263020E7B9510093341C /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		F67EE1A7534521E0D83CAE3B /* ListLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLayoutTest.h; sourceTree = "<group>"; };
-		F67EE2220E734B54E89A6318 /* ListLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLayoutTest.m; sourceTree = "<group>"; };
+		F67EE6F3E955CAB0C5334750 /* OrderDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDictionary.h; sourceTree = "<group>"; };
 		F67EE7A07464B81640F36644 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		F67EE7BBEB31C783348C4CA0 /* OrderDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDictionary.m; sourceTree = "<group>"; };
 		F67EE961A5BE68E5AAF5AFD2 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailLayoutTest.h; sourceTree = "<group>"; };
+		F67EECBDB08B88D1D72875B7 /* ListLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLayoutTest.h; sourceTree = "<group>"; };
+		F67EEE7CB22BDE4F2F24C045 /* ListLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLayoutTest.m; sourceTree = "<group>"; };
 		F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailLayoutTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +137,7 @@
 				70F0260020E78CBA0093341C /* main.m */,
 				70F0262C20E78FB10093341C /* PrefixHeader.pch */,
 				F67EE865BB50F4D928D7578A /* Test */,
+				F67EE3AC066907551F35522D /* Helper */,
 			);
 			path = "iOS-layout-oc";
 			sourceTree = "<group>";
@@ -175,10 +176,8 @@
 		70F0262D20E7900E0093341C /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				70F0262F20E7B9510093341C /* ListViewController.h */,
-				70F0263020E7B9510093341C /* ListViewController.m */,
-				708EE64A20E8D11300D228F7 /* DetailListViewController.h */,
-				708EE64B20E8D11300D228F7 /* DetailListViewController.m */,
+				708EE64A20E8D11300D228F7 /* ListViewController.h */,
+				708EE64B20E8D11300D228F7 /* ListViewController.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -190,13 +189,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F67EE3AC066907551F35522D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F67EE7BBEB31C783348C4CA0 /* OrderDictionary.m */,
+				F67EE6F3E955CAB0C5334750 /* OrderDictionary.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		F67EE865BB50F4D928D7578A /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */,
 				F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */,
-				F67EE2220E734B54E89A6318 /* ListLayoutTest.m */,
-				F67EE1A7534521E0D83CAE3B /* ListLayoutTest.h */,
+				F67EEE7CB22BDE4F2F24C045 /* ListLayoutTest.m */,
+				F67EECBDB08B88D1D72875B7 /* ListLayoutTest.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -333,14 +341,14 @@
 			files = (
 				70F025F620E78CB90093341C /* ViewController.m in Sources */,
 				70F0262820E78EE40093341C /* BaseViewController.m in Sources */,
-				70F0263120E7B9510093341C /* ListViewController.m in Sources */,
-				708EE64C20E8D11300D228F7 /* DetailListViewController.m in Sources */,
+				708EE64C20E8D11300D228F7 /* ListViewController.m in Sources */,
 				70F0260120E78CBA0093341C /* main.m in Sources */,
 				70F025F320E78CB90093341C /* AppDelegate.m in Sources */,
 				70F0262B20E78F180093341C /* BaseTableViewController.m in Sources */,
 				F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */,
-				F67EE04232C5477274C0F5A7 /* ListLayoutTest.m in Sources */,
 				F67EE9B0E96B556C805F9293 /* BaseCell.m in Sources */,
+				F67EEF39C84653D536286E5E /* OrderDictionary.m in Sources */,
+				F67EEE988E375CD356F5B7BF /* ListLayoutTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

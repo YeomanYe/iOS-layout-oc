@@ -10,6 +10,6 @@
 
 }
 - (void)initDataSource {
-    self.dataSource = @{@"key1":@"val1",@"key2":@"val2"};
+    self.detailDataSource = @{@"key1":@"val1",@"key2":@"val2"};
 }
 @end

@@ -1,5 +1,5 @@
 //
-// Created by 美德远健 on 2018/7/2.
+// Created by 美德远健 on 2018/7/13.
 // Copyright (c) 2018 叶铭. All rights reserved.
 //
 
@@ -9,7 +9,7 @@
 @implementation ListLayoutTest {
 
 }
-- (void)initDataSource {
-    self.dataSource = @[@"Item1",@"Item2",@"Item3"];
+-(void)initDataSource {
+    self.singleDataSource = @[@"banana",@"apple",@"orange",@"pear"];
 }
 @end
