@@ -11,8 +11,8 @@
 
 }
 - (void)initDataSource {
-    self.dataSource = @[@{@"title":@"List",@"vc": [[ListLayoutTest alloc] init]},
-                        @{@"title":@"Detail",@"vc": [[DetailLayoutTest alloc] init]}];
+    self.dataSource = @[@{@"icon":@"icon_component",@"title":@"List",@"vc": [[ListLayoutTest alloc] init]},
+                        @{@"icon":@"icon_tab",@"title":@"Detail",@"vc": [[DetailLayoutTest alloc] init]}];
 }
 
 @end
