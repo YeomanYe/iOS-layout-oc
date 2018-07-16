@@ -9,4 +9,5 @@
 @interface BaseTabBarCtrl : UITabBarController
 @property (nonatomic, strong) UIColor *tintColor;
 -(void)didInitialize;
+-(void)initDataSource;
 @end

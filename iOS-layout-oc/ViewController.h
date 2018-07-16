@@ -12,6 +12,7 @@
 
 - (IBAction)onListTestTouch:(id)sender;
 - (IBAction)onDetailTestTouch:(id)sender;
+- (IBAction)onTabBarTest:(id)sender;
 
 @end
 

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DetailLayoutTest.h"
 #import "ListLayoutTest.h"
+#import "TabBarTest.h"
 
 @interface ViewController ()
 
@@ -36,6 +37,12 @@
 
 - (IBAction)onDetailTestTouch:(id)sender {
     [self presentViewController:[[DetailLayoutTest alloc]init] animated:true completion:^(void){
+
+    }];
+}
+
+- (IBAction)onTabBarTest:(id)sender {
+    [self presentViewController:[[TabBarTest alloc]init] animated:true completion:^(void){
 
     }];
 }

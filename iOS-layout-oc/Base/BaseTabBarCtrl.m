@@ -24,10 +24,16 @@
 }
 
 - (void)didInitialize {
+    [self initDataSource];
     // 给tintColor设置默认值
     if (!self.tintColor) {
         self.tintColor = [UIColor purpleColor];
     }
     self.tabBar.tintColor = self.tintColor;
 }
+
+- (void)initDataSource {
+
+}
+
 @end
