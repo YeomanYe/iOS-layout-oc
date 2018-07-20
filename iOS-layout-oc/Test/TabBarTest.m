@@ -12,7 +12,7 @@
 }
 - (void)initDataSource {
     self.dataSource = @[@{@"icon":@"icon_component",@"title":@"List",@"vc": [[ListLayoutTest alloc] init]},
-                        @{@"icon":@"icon_tab",@"title":@"Detail",@"vc": [[DetailLayoutTest alloc] init]}];
+                        @{@"icon":@"icon_lab",@"title":@"Detail",@"vc": [[DetailLayoutTest alloc] init]}];
 }
 
 @end
