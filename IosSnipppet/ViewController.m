@@ -30,9 +30,10 @@
 
 
 - (IBAction)onListTestTouch:(id)sender {
-    [self presentViewController:[[ListLayoutTest alloc]init] animated:true completion:^(void){
+    /*[self presentViewController:[[ListLayoutTest alloc]init] animated:true completion:^(void){
 
-    }];
+    }];*/
+    [self.navigationController pushViewController:[[ListLayoutTest alloc]init] animated:true];
 }
 
 - (IBAction)onDetailTestTouch:(id)sender {

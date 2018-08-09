@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46A00DDD20EDA3DB00FF0EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A00DDB20EDA3DB00FF0EA1 /* Main.storyboard */; };
+		46D6691F211C0C3900A23ECB /* POPAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D6691E211C0C3900A23ECB /* POPAnimation.m */; };
 		708EE64C20E8D11300D228F7 /* ISListViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 708EE64B20E8D11300D228F7 /* ISListViewCtrl.m */; };
 		70F025F320E78CB90093341C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F025F220E78CB90093341C /* AppDelegate.m */; };
 		70F025F620E78CB90093341C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F025F520E78CB90093341C /* ViewController.m */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		46A00DDC20EDA3DB00FF0EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D6691D211C0C3900A23ECB /* POPAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPAnimation.h; sourceTree = "<group>"; };
+		46D6691E211C0C3900A23ECB /* POPAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPAnimation.m; sourceTree = "<group>"; };
 		708EE64A20E8D11300D228F7 /* ISListViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISListViewCtrl.h; sourceTree = "<group>"; };
 		708EE64B20E8D11300D228F7 /* ISListViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISListViewCtrl.m; sourceTree = "<group>"; };
 		70F025EE20E78CB90093341C /* IosSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46D6691C211C0B7600A23ECB /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				46D6691D211C0C3900A23ECB /* POPAnimation.h */,
+				46D6691E211C0C3900A23ECB /* POPAnimation.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		70F025E520E78CB90093341C = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		70F025F020E78CB90093341C /* IosSnipppet */ = {
 			isa = PBXGroup;
 			children = (
+				46D6691C211C0B7600A23ECB /* Animation */,
 				70F0262D20E7900E0093341C /* Layout */,
 				70F0262520E78EA40093341C /* Base */,
 				70F025F120E78CB90093341C /* AppDelegate.h */,
@@ -358,6 +371,7 @@
 				F67EEE988E375CD356F5B7BF /* ListLayoutTest.m in Sources */,
 				D43CC97189EC8C8D978E0B1C /* BaseTabCtrl.m in Sources */,
 				D43CC274D09A1115C097B5D7 /* ISTabCtrl.m in Sources */,
+				46D6691F211C0C3900A23ECB /* POPAnimation.m in Sources */,
 				D43CC7B541299D7CB3840A69 /* TabBarTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

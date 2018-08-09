@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseViewCtrl : UIViewController
+@interface BaseViewCtrl : UIViewController<UINavigationControllerDelegate>
 
 @end
