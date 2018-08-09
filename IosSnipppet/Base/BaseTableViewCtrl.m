@@ -8,7 +8,7 @@
 
 #import "BaseTableViewCtrl.h"
 
-@interface BaseTableViewCtrl () <UITableViewDelegate, UITableViewDataSource>
+@interface BaseTableViewCtrl ()
 
 
 @end
@@ -16,12 +16,9 @@
 @implementation BaseTableViewCtrl
 
 - (instancetype)initWithStyle:(UITableViewStyle)style {
-    self = [super init];
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:style];
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
-    [self initDataSource];
-    [self.view addSubview:_tableView];
+    if(self = [super initWithStyle:style]){
+        [self initDataSource];
+    }
     return self;
 }
 

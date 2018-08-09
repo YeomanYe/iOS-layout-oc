@@ -37,9 +37,7 @@
 }
 
 - (IBAction)onDetailTestTouch:(id)sender {
-    [self presentViewController:[[DetailLayoutTest alloc]init] animated:true completion:^(void){
-
-    }];
+    [self.navigationController pushViewController:[[DetailLayoutTest alloc] init] animated:true];
 }
 
 - (IBAction)onTabBarTest:(id)sender {

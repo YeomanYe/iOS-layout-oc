@@ -9,14 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewCtrl.h"
 
-@interface BaseTableViewCtrl : BaseViewCtrl{
-    UITableView *_tableView;
-}
-@property (nonatomic) UITableView *tableView;
+@interface BaseTableViewCtrl : UITableViewController
 @end
 
 @interface BaseTableViewCtrl(UISubclassingHooks)
--(instancetype)initWithStyle:(UITableViewStyle)style;
 - (void)initDataSource;
 - (void)didSelectItemWithTitle:(NSString *)title;
 
