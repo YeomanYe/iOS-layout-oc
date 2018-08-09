@@ -48,7 +48,7 @@
 		46A00DDC20EDA3DB00FF0EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		708EE64A20E8D11300D228F7 /* ListViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewCtrl.h; sourceTree = "<group>"; };
 		708EE64B20E8D11300D228F7 /* ListViewCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewCtrl.m; sourceTree = "<group>"; };
-		70F025EE20E78CB90093341C /* iOS-layout-oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-layout-oc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F025EE20E78CB90093341C /* IosSnippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosSnippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F025F120E78CB90093341C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		70F025F220E78CB90093341C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		70F025F420E78CB90093341C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -57,10 +57,10 @@
 		70F025FD20E78CBA0093341C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70F025FF20E78CBA0093341C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70F0260020E78CBA0093341C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70F0260620E78CBA0093341C /* iOS-layout-ocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-layout-ocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F0260620E78CBA0093341C /* IosSnippetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosSnippetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F0260A20E78CBA0093341C /* iOS_layout_ocTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_layout_ocTests.m; sourceTree = "<group>"; };
 		70F0260C20E78CBA0093341C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70F0261120E78CBA0093341C /* iOS-layout-ocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-layout-ocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F0261120E78CBA0093341C /* IosSnippetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosSnippetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F0261520E78CBA0093341C /* iOS_layout_ocUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_layout_ocUITests.m; sourceTree = "<group>"; };
 		70F0261720E78CBA0093341C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70F0262620E78EE40093341C /* BaseViewCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewCtrl.h; sourceTree = "<group>"; };
@@ -112,9 +112,9 @@
 		70F025E520E78CB90093341C = {
 			isa = PBXGroup;
 			children = (
-				70F025F020E78CB90093341C /* iOS-layout-oc */,
-				70F0260920E78CBA0093341C /* iOS-layout-ocTests */,
-				70F0261420E78CBA0093341C /* iOS-layout-ocUITests */,
+				70F025F020E78CB90093341C /* IosSnipppet */,
+				70F0260920E78CBA0093341C /* IosSnippetTests */,
+				70F0261420E78CBA0093341C /* IosSnippetUITests */,
 				70F025EF20E78CB90093341C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,14 +122,14 @@
 		70F025EF20E78CB90093341C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70F025EE20E78CB90093341C /* iOS-layout-oc.app */,
-				70F0260620E78CBA0093341C /* iOS-layout-ocTests.xctest */,
-				70F0261120E78CBA0093341C /* iOS-layout-ocUITests.xctest */,
+				70F025EE20E78CB90093341C /* IosSnippet.app */,
+				70F0260620E78CBA0093341C /* IosSnippetTests.xctest */,
+				70F0261120E78CBA0093341C /* IosSnippetUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		70F025F020E78CB90093341C /* iOS-layout-oc */ = {
+		70F025F020E78CB90093341C /* IosSnipppet */ = {
 			isa = PBXGroup;
 			children = (
 				70F0262E20E790CF0093341C /* Extension */,
@@ -148,25 +148,25 @@
 				F67EE865BB50F4D928D7578A /* Test */,
 				F67EE3AC066907551F35522D /* Helper */,
 			);
-			path = "iOS-layout-oc";
+			path = IosSnipppet;
 			sourceTree = "<group>";
 		};
-		70F0260920E78CBA0093341C /* iOS-layout-ocTests */ = {
+		70F0260920E78CBA0093341C /* IosSnippetTests */ = {
 			isa = PBXGroup;
 			children = (
 				70F0260A20E78CBA0093341C /* iOS_layout_ocTests.m */,
 				70F0260C20E78CBA0093341C /* Info.plist */,
 			);
-			path = "iOS-layout-ocTests";
+			path = IosSnippetTests;
 			sourceTree = "<group>";
 		};
-		70F0261420E78CBA0093341C /* iOS-layout-ocUITests */ = {
+		70F0261420E78CBA0093341C /* IosSnippetUITests */ = {
 			isa = PBXGroup;
 			children = (
 				70F0261520E78CBA0093341C /* iOS_layout_ocUITests.m */,
 				70F0261720E78CBA0093341C /* Info.plist */,
 			);
-			path = "iOS-layout-ocUITests";
+			path = IosSnippetUITests;
 			sourceTree = "<group>";
 		};
 		70F0262520E78EA40093341C /* Base */ = {
@@ -227,9 +227,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70F025ED20E78CB90093341C /* iOS-layout-oc */ = {
+		70F025ED20E78CB90093341C /* IosSnippet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70F0261A20E78CBA0093341C /* Build configuration list for PBXNativeTarget "iOS-layout-oc" */;
+			buildConfigurationList = 70F0261A20E78CBA0093341C /* Build configuration list for PBXNativeTarget "IosSnippet" */;
 			buildPhases = (
 				70F025EA20E78CB90093341C /* Sources */,
 				70F025EB20E78CB90093341C /* Frameworks */,
@@ -239,14 +239,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-layout-oc";
+			name = IosSnippet;
 			productName = "iOS-layout-oc";
-			productReference = 70F025EE20E78CB90093341C /* iOS-layout-oc.app */;
+			productReference = 70F025EE20E78CB90093341C /* IosSnippet.app */;
 			productType = "com.apple.product-type.application";
 		};
-		70F0260520E78CBA0093341C /* iOS-layout-ocTests */ = {
+		70F0260520E78CBA0093341C /* IosSnippetTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70F0261D20E78CBA0093341C /* Build configuration list for PBXNativeTarget "iOS-layout-ocTests" */;
+			buildConfigurationList = 70F0261D20E78CBA0093341C /* Build configuration list for PBXNativeTarget "IosSnippetTests" */;
 			buildPhases = (
 				70F0260220E78CBA0093341C /* Sources */,
 				70F0260320E78CBA0093341C /* Frameworks */,
@@ -257,14 +257,14 @@
 			dependencies = (
 				70F0260820E78CBA0093341C /* PBXTargetDependency */,
 			);
-			name = "iOS-layout-ocTests";
+			name = IosSnippetTests;
 			productName = "iOS-layout-ocTests";
-			productReference = 70F0260620E78CBA0093341C /* iOS-layout-ocTests.xctest */;
+			productReference = 70F0260620E78CBA0093341C /* IosSnippetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		70F0261020E78CBA0093341C /* iOS-layout-ocUITests */ = {
+		70F0261020E78CBA0093341C /* IosSnippetUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70F0262020E78CBA0093341C /* Build configuration list for PBXNativeTarget "iOS-layout-ocUITests" */;
+			buildConfigurationList = 70F0262020E78CBA0093341C /* Build configuration list for PBXNativeTarget "IosSnippetUITests" */;
 			buildPhases = (
 				70F0260D20E78CBA0093341C /* Sources */,
 				70F0260E20E78CBA0093341C /* Frameworks */,
@@ -275,9 +275,9 @@
 			dependencies = (
 				70F0261320E78CBA0093341C /* PBXTargetDependency */,
 			);
-			name = "iOS-layout-ocUITests";
+			name = IosSnippetUITests;
 			productName = "iOS-layout-ocUITests";
-			productReference = 70F0261120E78CBA0093341C /* iOS-layout-ocUITests.xctest */;
+			productReference = 70F0261120E78CBA0093341C /* IosSnippetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 70F025E920E78CB90093341C /* Build configuration list for PBXProject "iOS-layout-oc" */;
+			buildConfigurationList = 70F025E920E78CB90093341C /* Build configuration list for PBXProject "IosSnippet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -315,9 +315,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70F025ED20E78CB90093341C /* iOS-layout-oc */,
-				70F0260520E78CBA0093341C /* iOS-layout-ocTests */,
-				70F0261020E78CBA0093341C /* iOS-layout-ocUITests */,
+				70F025ED20E78CB90093341C /* IosSnippet */,
+				70F0260520E78CBA0093341C /* IosSnippetTests */,
+				70F0261020E78CBA0093341C /* IosSnippetUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,12 +391,12 @@
 /* Begin PBXTargetDependency section */
 		70F0260820E78CBA0093341C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 70F025ED20E78CB90093341C /* iOS-layout-oc */;
+			target = 70F025ED20E78CB90093341C /* IosSnippet */;
 			targetProxy = 70F0260720E78CBA0093341C /* PBXContainerItemProxy */;
 		};
 		70F0261320E78CBA0093341C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 70F025ED20E78CB90093341C /* iOS-layout-oc */;
+			target = 70F025ED20E78CB90093341C /* IosSnippet */;
 			targetProxy = 70F0261220E78CBA0093341C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -537,13 +537,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3RZX4Q7WT;
-				INFOPLIST_FILE = "iOS-layout-oc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/IosSnipppet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "club.fwheart.iOS-layout-oc";
+				PRODUCT_BUNDLE_IDENTIFIER = club.fwheart.ios.snippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -555,13 +555,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3RZX4Q7WT;
-				INFOPLIST_FILE = "iOS-layout-oc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/IosSnipppet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "club.fwheart.iOS-layout-oc";
+				PRODUCT_BUNDLE_IDENTIFIER = club.fwheart.ios.snippet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -581,7 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "club.fwheart.iOS-layout-ocTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-layout-oc.app/iOS-layout-oc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosSnippet.app/IosSnippet";
 			};
 			name = Debug;
 		};
@@ -599,7 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "club.fwheart.iOS-layout-ocTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-layout-oc.app/iOS-layout-oc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosSnippet.app/IosSnippet";
 			};
 			name = Release;
 		};
@@ -640,7 +640,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70F025E920E78CB90093341C /* Build configuration list for PBXProject "iOS-layout-oc" */ = {
+		70F025E920E78CB90093341C /* Build configuration list for PBXProject "IosSnippet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70F0261820E78CBA0093341C /* Debug */,
@@ -649,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70F0261A20E78CBA0093341C /* Build configuration list for PBXNativeTarget "iOS-layout-oc" */ = {
+		70F0261A20E78CBA0093341C /* Build configuration list for PBXNativeTarget "IosSnippet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70F0261B20E78CBA0093341C /* Debug */,
@@ -658,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70F0261D20E78CBA0093341C /* Build configuration list for PBXNativeTarget "iOS-layout-ocTests" */ = {
+		70F0261D20E78CBA0093341C /* Build configuration list for PBXNativeTarget "IosSnippetTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70F0261E20E78CBA0093341C /* Debug */,
@@ -667,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70F0262020E78CBA0093341C /* Build configuration list for PBXNativeTarget "iOS-layout-ocUITests" */ = {
+		70F0262020E78CBA0093341C /* Build configuration list for PBXNativeTarget "IosSnippetUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70F0262120E78CBA0093341C /* Debug */,
