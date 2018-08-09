@@ -10,6 +10,7 @@
 
 }
 - (void)initDataSource {
-    self.detailDataSource = @{@"key1":@"val1",@"key2":@"val2"};
+    self.dataSource = @[@{@"text":@"item1",@"detailText":@"item1 detailText"},@{@"text":@"item2",@"detailText":@"item2 detialText"}];
+    self.cellStyle = UITableViewCellStyleSubtitle;
 }
 @end

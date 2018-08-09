@@ -4,8 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TabBarCtrl.h"
+#import "ISTabCtrl.h"
 
-@interface TabBarTest : TabBarCtrl
+@interface TabBarTest : ISTabCtrl
 -(void)initDataSource;
 @end

@@ -3,10 +3,10 @@
 // Copyright (c) 2018 叶铭. All rights reserved.
 //
 
-#import "TabBarCtrl.h"
+#import "ISTabCtrl.h"
 
 
-@implementation TabBarCtrl {
+@implementation ISTabCtrl {
 
 }
 - (void)initDataSource {

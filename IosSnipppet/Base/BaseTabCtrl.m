@@ -3,10 +3,10 @@
 // Copyright (c) 2018 叶铭. All rights reserved.
 //
 
-#import "BaseTabBarCtrl.h"
+#import "BaseTabCtrl.h"
 
 
-@implementation BaseTabBarCtrl {
+@implementation BaseTabCtrl {
 
 }
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {

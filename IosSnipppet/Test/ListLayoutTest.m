@@ -10,6 +10,7 @@
 
 }
 -(void)initDataSource {
-    self.singleDataSource = @[@"banana",@"apple",@"orange",@"pear"];
+    self.dataSource = @[@{@"text":@"banana"},@{@"text":@"orange"},@{@"text":@"pear"}];
+    self.cellStyle = UITableViewCellStyleValue1;
 }
 @end

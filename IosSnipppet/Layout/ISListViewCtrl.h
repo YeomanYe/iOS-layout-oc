@@ -1,5 +1,5 @@
 //
-//  ListViewCtrl.h
+//  ISListViewCtrl.h
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/7/1.
@@ -9,8 +9,8 @@
 #import "BaseTableViewCtrl.h"
 #import "OrderDictionary.h"
 
-@interface ListViewCtrl : BaseTableViewCtrl
-@property (nonatomic, strong) OrderDictionary *detailDataSource;
-@property (nonatomic, strong) NSArray<NSString *> *singleDataSource;
+@interface ISListViewCtrl : BaseTableViewCtrl
+@property (nonatomic) UITableViewCellStyle cellStyle;
+@property (nonatomic, strong) NSArray<NSDictionary *> *dataSource;
 - (void)initDataSource;
 @end

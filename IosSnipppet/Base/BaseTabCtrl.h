@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface BaseTabBarCtrl : UITabBarController
+@interface BaseTabCtrl : UITabBarController
 @property (nonatomic, strong) UIColor *tintColor;
 -(void)didInitialize;
 -(void)initDataSource;

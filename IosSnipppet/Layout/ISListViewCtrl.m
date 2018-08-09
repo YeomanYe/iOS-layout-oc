@@ -1,21 +1,21 @@
 //
-//  ListViewCtrl.m
+//  ISListViewCtrl.m
 //  iOS-layout-oc
 //
 //  Created by 叶铭 on 2018/7/1.
 //  Copyright © 2018年 叶铭. All rights reserved.
 //
 
-#import "ListViewCtrl.h"
+#import "ISListViewCtrl.h"
 #import "BaseCell.h"
 
-@interface ListViewCtrl (){
+@interface ISListViewCtrl (){
     NSString *identifierCell;
     BaseCell *cell;
 }
 @end
 
-@implementation ListViewCtrl
+@implementation ISListViewCtrl
 
 #pragma mark - TVController
 
@@ -25,10 +25,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger sum = 0;
-    if(_singleDataSource) sum = _singleDataSource.count;
-    else if(_detailDataSource) sum = _detailDataSource.count;
-    return sum;
+    return _dataSource.count;
 }
 
 - (void)viewDidLoad {
@@ -37,31 +34,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     cell = [tableView dequeueReusableCellWithIdentifier:identifierCell];
-    // cell = nil;
-    [self renderWithSingle:indexPath];
-    [self renderWithDetail:indexPath];
+    switch (_cellStyle){
+        case UITableViewCellStyleValue1:[self renderWithText:indexPath];break;
+        case UITableViewCellStyleSubtitle:[self renderWithDetail:indexPath];
+            break;
+    }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
--(void)renderWithSingle:(NSIndexPath *)indexPath{
-    if(!_singleDataSource) return;
+-(void)renderWithText:(NSIndexPath *)indexPath{
     if(!cell) {
-        cell = [[BaseCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifierCell];
+        cell = [[BaseCell alloc] initWithStyle:_cellStyle reuseIdentifier:identifierCell];
     }
-    cell.textLabel.text = _singleDataSource[indexPath.row];
-    // Configure the cell...
+    cell.textLabel.text = [_dataSource[indexPath.row] valueForKey:@"text"];
     cell.textLabel.font = [UIFont systemFontOfSize:15];
 }
 
 -(void)renderWithDetail:(NSIndexPath *)indexPath{
-    if(!_detailDataSource) return;
     if(!cell) {
         cell = [[BaseCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifierCell];
     }
-    NSString *key = [_detailDataSource allKeys][indexPath.row];
-    cell.textLabel.text = key;
-    cell.detailTextLabel.text = [_detailDataSource objectForKey:key];
+    cell.textLabel.text = [_dataSource[indexPath.row] valueForKey:@"text"];
+    cell.detailTextLabel.text = [_dataSource[indexPath.row] valueForKey:@"detailText"];
     // Configure the cell...
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:13];
@@ -69,7 +64,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *title = nil;
-    title = [_detailDataSource allKeys][indexPath.row];
+    title = [_dataSource[indexPath.row] valueForKey:@"text"];
     return [self didSelectItemWithTitle:title];
 }
 

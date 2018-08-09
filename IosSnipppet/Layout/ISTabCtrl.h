@@ -4,9 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseTabBarCtrl.h"
+#import "BaseTabCtrl.h"
 
-@interface TabBarCtrl : BaseTabBarCtrl
+@interface ISTabCtrl : BaseTabCtrl
 @property (nonatomic,strong) NSArray<NSDictionary *> *dataSource;
 -(void)initDataSource;
 -(void)didInitialize;
