@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "DetailLayoutTest.h"
 #import "ListLayoutTest.h"
-#import "TabBarTest.h"
+#import "TabTest.h"
 
 @interface ViewController ()
 
@@ -41,8 +41,9 @@
 }
 
 - (IBAction)onTabBarTest:(id)sender {
-    [self presentViewController:[[TabBarTest alloc]init] animated:true completion:^(void){
+    /*[self presentViewController:[[TabTest alloc]init] animated:true completion:^(void){
 
-    }];
+    }];*/
+    [self.navigationController pushViewController:[[TabTest alloc] init] animated:true];
 }
 @end

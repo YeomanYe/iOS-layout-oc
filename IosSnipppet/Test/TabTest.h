@@ -6,6 +6,6 @@
 #import <Foundation/Foundation.h>
 #import "ISTabCtrl.h"
 
-@interface TabBarTest : ISTabCtrl
+@interface TabTest : ISTabCtrl
 -(void)initDataSource;
 @end

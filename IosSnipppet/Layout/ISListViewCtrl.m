@@ -65,11 +65,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *title = nil;
     title = [_dataSource[indexPath.row] valueForKey:@"text"];
-    return [self didSelectItemWithTitle:title];
+    return [self didSelectItem:title index:indexPath.row];
 }
 
 -(void)initDataSource{
     
 }
-
+-(void)didSelectItem:(NSString *)title index:(int)index{
+    NSLog(@"ISListView index:%d,title:%@",index,title);
+}
 @end

@@ -7,10 +7,10 @@
 //
 
 #import "BaseTableViewCtrl.h"
-#import "OrderDictionary.h"
 
 @interface ISListViewCtrl : BaseTableViewCtrl
 @property (nonatomic) UITableViewCellStyle cellStyle;
 @property (nonatomic, strong) NSArray<NSDictionary *> *dataSource;
 - (void)initDataSource;
+-(void)didSelectItem:(NSString *)title index:(int)index;
 @end

@@ -13,4 +13,7 @@
     self.dataSource = @[@{@"text":@"banana"},@{@"text":@"orange"},@{@"text":@"pear"}];
     self.cellStyle = UITableViewCellStyleValue1;
 }
+-(void)didSelectItem:(NSString *)title index:(int)index{
+    [super didSelectItem:title index:index];
+}
 @end

@@ -20,12 +20,11 @@
 		70F0262820E78EE40093341C /* BaseViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0262720E78EE40093341C /* BaseViewCtrl.m */; };
 		70F0262B20E78F180093341C /* BaseTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F0262A20E78F180093341C /* BaseTableViewCtrl.m */; };
 		D43CC274D09A1115C097B5D7 /* ISTabCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D43CC25307C7E386F9300DD8 /* ISTabCtrl.m */; };
-		D43CC7B541299D7CB3840A69 /* TabBarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D43CCD2DAF7E1FE5D3DAA41A /* TabBarTest.m */; };
+		D43CC7B541299D7CB3840A69 /* TabTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D43CCD2DAF7E1FE5D3DAA41A /* TabTest.m */; };
 		D43CC97189EC8C8D978E0B1C /* BaseTabCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D43CC8B28A4BA8B47BF4AE4D /* BaseTabCtrl.m */; };
 		F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EEFAE4D870989E5FDB706 /* DetailLayoutTest.m */; };
 		F67EE9B0E96B556C805F9293 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE7A07464B81640F36644 /* BaseCell.m */; };
 		F67EEE988E375CD356F5B7BF /* ListLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EEE7CB22BDE4F2F24C045 /* ListLayoutTest.m */; };
-		F67EEF39C84653D536286E5E /* OrderDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EE7BBEB31C783348C4CA0 /* OrderDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +73,10 @@
 		D43CC07DCF4BA5206BF90B76 /* BaseTabCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabCtrl.h; sourceTree = "<group>"; };
 		D43CC25307C7E386F9300DD8 /* ISTabCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISTabCtrl.m; sourceTree = "<group>"; };
 		D43CC8B28A4BA8B47BF4AE4D /* BaseTabCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabCtrl.m; sourceTree = "<group>"; };
-		D43CCA9262EC5DF8FEB299DA /* TabBarTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarTest.h; sourceTree = "<group>"; };
+		D43CCA9262EC5DF8FEB299DA /* TabTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabTest.h; sourceTree = "<group>"; };
 		D43CCC18FA585A4CCEEB5D77 /* ISTabCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISTabCtrl.h; sourceTree = "<group>"; };
-		D43CCD2DAF7E1FE5D3DAA41A /* TabBarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarTest.m; sourceTree = "<group>"; };
-		F67EE6F3E955CAB0C5334750 /* OrderDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDictionary.h; sourceTree = "<group>"; };
+		D43CCD2DAF7E1FE5D3DAA41A /* TabTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabTest.m; sourceTree = "<group>"; };
 		F67EE7A07464B81640F36644 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
-		F67EE7BBEB31C783348C4CA0 /* OrderDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDictionary.m; sourceTree = "<group>"; };
 		F67EE961A5BE68E5AAF5AFD2 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
 		F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailLayoutTest.h; sourceTree = "<group>"; };
 		F67EECBDB08B88D1D72875B7 /* ListLayoutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLayoutTest.h; sourceTree = "<group>"; };
@@ -158,7 +155,6 @@
 				70F0260020E78CBA0093341C /* main.m */,
 				70F0262C20E78FB10093341C /* PrefixHeader.pch */,
 				F67EE865BB50F4D928D7578A /* Test */,
-				F67EE3AC066907551F35522D /* Helper */,
 			);
 			path = IosSnipppet;
 			sourceTree = "<group>";
@@ -207,15 +203,6 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
-		F67EE3AC066907551F35522D /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				F67EE7BBEB31C783348C4CA0 /* OrderDictionary.m */,
-				F67EE6F3E955CAB0C5334750 /* OrderDictionary.h */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		F67EE865BB50F4D928D7578A /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,8 +210,8 @@
 				F67EE9AFAC28BBB606CD873E /* DetailLayoutTest.h */,
 				F67EEE7CB22BDE4F2F24C045 /* ListLayoutTest.m */,
 				F67EECBDB08B88D1D72875B7 /* ListLayoutTest.h */,
-				D43CCD2DAF7E1FE5D3DAA41A /* TabBarTest.m */,
-				D43CCA9262EC5DF8FEB299DA /* TabBarTest.h */,
+				D43CCD2DAF7E1FE5D3DAA41A /* TabTest.m */,
+				D43CCA9262EC5DF8FEB299DA /* TabTest.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -367,12 +354,11 @@
 				70F0262B20E78F180093341C /* BaseTableViewCtrl.m in Sources */,
 				F67EE553F176A9B252BE2089 /* DetailLayoutTest.m in Sources */,
 				F67EE9B0E96B556C805F9293 /* BaseCell.m in Sources */,
-				F67EEF39C84653D536286E5E /* OrderDictionary.m in Sources */,
 				F67EEE988E375CD356F5B7BF /* ListLayoutTest.m in Sources */,
 				D43CC97189EC8C8D978E0B1C /* BaseTabCtrl.m in Sources */,
 				D43CC274D09A1115C097B5D7 /* ISTabCtrl.m in Sources */,
 				46D6691F211C0C3900A23ECB /* POPAnimation.m in Sources */,
-				D43CC7B541299D7CB3840A69 /* TabBarTest.m in Sources */,
+				D43CC7B541299D7CB3840A69 /* TabTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,11 +3,11 @@
 // Copyright (c) 2018 叶铭. All rights reserved.
 //
 
-#import "TabBarTest.h"
+#import "TabTest.h"
 #import "ListLayoutTest.h"
 #import "DetailLayoutTest.h"
 
-@implementation TabBarTest {
+@implementation TabTest {
 
 }
 - (void)initDataSource {

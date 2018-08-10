@@ -14,6 +14,6 @@
 
 @interface BaseTableViewCtrl(UISubclassingHooks)
 - (void)initDataSource;
-- (void)didSelectItemWithTitle:(NSString *)title;
+- (void)didSelectItem:(NSString *)title;
 
 @end
